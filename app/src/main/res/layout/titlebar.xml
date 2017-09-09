@@ -11,7 +11,7 @@
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="标题"
+        android:text="绿雀物流"
         android:gravity="center"
         android:textColor="@color/head_color"
         android:textSize="@dimen/title_size" />

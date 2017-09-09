@@ -44,7 +44,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setUpContentView();
+        setContentView(setUpContentView());
         ButterKnife.bind(this);
         mActivity = this;
         intent = getIntent();

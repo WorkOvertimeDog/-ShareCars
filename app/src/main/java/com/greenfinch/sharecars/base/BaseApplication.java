@@ -16,6 +16,8 @@ import java.util.logging.Level;
 
 import okhttp3.OkHttpClient;
 
+import com.baidu.mapapi.SDKInitializer;
+
 /**
  * Created by pangjiaqi on 2017/9/6.
  * 全局Application
@@ -26,6 +28,15 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initOkGo();
+        initBaiDuMap();
+    }
+
+    private void initBaiDuMap() {
+        SDKInitializer.initialize(this);
+    }
+
+    private void initQR() {
+//        ZXingLibrary.initDisplayOpinion(this);
     }
 
     private void initOkGo() {

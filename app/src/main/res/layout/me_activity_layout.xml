@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/green_logistics"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/green_logistics_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="物雀物流VIP"/>
+
+            <TextView
+                android:id="@+id/green_logistics_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="已认证：信用分100"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_distance"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/my_distance_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_distance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/my_distance_icon"
+                android:text="我的行程" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_vallet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/my_vallet_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/my_vallet_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_vallet_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="我的钱包"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/my_vallet_txt"
+                android:layout_marginLeft="30dp"
+                android:text="1500元"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_discoun"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/my_discoun_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/my_discount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_discoun_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="输入优惠码"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/my_invitation_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/my_invitation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_invitation_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="邀请好友"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_guide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/my_guide_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/my_guide_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_guide_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="使用指南"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
