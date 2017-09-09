@@ -68,12 +68,12 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/my_vallet"
+            android:id="@+id/my_wallet"
             android:layout_width="match_parent"
             android:layout_height="40dp">
 
             <ImageView
-                android:id="@+id/my_vallet_icon"
+                android:id="@+id/my_wallet_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
@@ -82,7 +82,7 @@
                 android:id="@+id/my_vallet_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/my_vallet_icon"
+                android:layout_toRightOf="@id/my_wallet_icon"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:text="我的钱包"/>

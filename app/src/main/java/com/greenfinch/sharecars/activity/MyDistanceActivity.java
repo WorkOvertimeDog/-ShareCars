@@ -1,4 +1,4 @@
-package com.greenfinch.sharecars.me;
+package com.greenfinch.sharecars.activity;
 
 import android.os.Bundle;
 

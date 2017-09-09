@@ -2,6 +2,7 @@ package com.greenfinch.sharecars.base;
 
 import android.app.Application;
 
+import com.greenfinch.sharecars.utils.Utils;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -28,6 +29,7 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initOkGo();
+        Utils.init(BaseApplication.this);
         initBaiDuMap();
     }
 

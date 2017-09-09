@@ -1,4 +1,4 @@
-package com.greenfinch.sharecars.home;
+package com.greenfinch.sharecars.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,7 +31,6 @@ import com.google.zxing.activity.CaptureActivity;
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
 import com.greenfinch.sharecars.utils.CommonUtil;
-import com.greenfinch.sharecars.me.MeActivity;
 
 /**
  * Created by Admin on 2017/9/9.

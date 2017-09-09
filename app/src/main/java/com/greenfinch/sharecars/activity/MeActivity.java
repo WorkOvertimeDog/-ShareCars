@@ -1,4 +1,4 @@
-package com.greenfinch.sharecars.me;
+package com.greenfinch.sharecars.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,7 +25,7 @@ public class MeActivity extends BaseActivity {
     @Override
     public void setUpView() {
         myDistance = (RelativeLayout) findViewById(R.id.my_distance);
-        myWallet = (RelativeLayout) findViewById(R.id.my_vallet);
+        myWallet = (RelativeLayout) findViewById(R.id.my_wallet);
         myDiscount = (RelativeLayout) findViewById(R.id.my_discount);
         myDistance.setOnClickListener(new View.OnClickListener() {
             @Override
