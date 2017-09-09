@@ -8,16 +8,12 @@ import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
 import com.greenfinch.sharecars.utils.ActivityUtils;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
 /**
  * Created by pangjiaqi on 2017/9/9.
  * 是否登录界面
  */
 
-public class GuideActivity extends BaseActivity implements View.OnClickListener{
+public class GuideActivity extends BaseActivity implements View.OnClickListener {
     Button mBtnLogin;
     private boolean isRegister = false;
 
@@ -28,12 +24,11 @@ public class GuideActivity extends BaseActivity implements View.OnClickListener{
 
     @Override
     public int setUpContentView() {
-        return 0;
+        return R.layout.activity_gudie_layout;
     }
 
     @Override
     public void setUpView() {
-        setContentView(R.layout.activity_gudie_layout);
         mBtnLogin = (Button) findViewById(R.id.btn_login);
         mBtnLogin.setOnClickListener(this);
     }
@@ -52,8 +47,8 @@ public class GuideActivity extends BaseActivity implements View.OnClickListener{
             //如果未注册，跳转到注册界面
             ActivityUtils.startActivity(this, UserRegisterActivity.class, R.anim.fade_in, R.anim.fade_out);
         } else {
-            //如果注册过，跳转到主界面
-
+            //如果注册过，跳转到押金界面
+            ActivityUtils.startActivity(this, UserRegisterActivity.class, R.anim.fade_in, R.anim.fade_out);
         }
     }
 }

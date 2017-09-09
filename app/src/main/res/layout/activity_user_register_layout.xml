@@ -76,7 +76,7 @@
                 android:id="@+id/cb_select"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:checked="true"
+                android:checked="false"
                 android:text="我已阅读，并同意《用户注册协议》"
                 android:textColor="#7B7B7B"/>
 

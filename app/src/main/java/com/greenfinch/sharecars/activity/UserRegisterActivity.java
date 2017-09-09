@@ -35,12 +35,11 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
 
     @Override
     public int setUpContentView() {
-        return 0;
+        return R.layout.activity_user_register_layout;
     }
 
     @Override
     public void setUpView() {
-        setContentView(R.layout.activity_user_register_layout);
         initViews();
     }
 
@@ -114,13 +113,12 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.btn_verify_phone:
                 //这里检测获取的验证码与输入的验证码是否一致
-                Toast.makeText(this, "成功", Toast.LENGTH_SHORT).show();
                 if ("".equals(getCode)) {
                     Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
                 } else if (getCode.length() != 4) {
                     Toast.makeText(this, "验证码输入错误", Toast.LENGTH_SHORT).show();
-                }else {
-//                    ActivityUtils.startActivity(this, );
+                } else {
+                    ActivityUtils.startActivity(this, HomeActivity.class);
                 }
                 break;
         }
