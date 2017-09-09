@@ -53,6 +53,10 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="FsxjXI5Sr0fgZ3tiXvXrFQPIG6OPoOsz"/>
+        android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FsxjXI5Sr0fgZ3tiXvXrFQPIG6OPoOsz"/>
 
         <activity
             android:name="com.google.zxing.activity.CaptureActivity"
