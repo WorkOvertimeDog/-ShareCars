@@ -19,8 +19,14 @@
         <activity android:name=".activity.GuideActivity"/>
         <activity
             android:name=".activity.UserRegisterActivity"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            />
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FsxjXI5Sr0fgZ3tiXvXrFQPIG6OPoOsz" />
+
+        <activity
+            android:name="com.google.zxing.activity.CaptureActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
     </application>
 
 </manifest>
