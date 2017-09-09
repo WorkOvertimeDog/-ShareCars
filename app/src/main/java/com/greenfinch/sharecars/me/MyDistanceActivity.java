@@ -1,4 +1,4 @@
-package com.greenfinch.sharecars.home;
+package com.greenfinch.sharecars.me;
 
 import android.os.Bundle;
 
@@ -8,16 +8,16 @@ import com.greenfinch.sharecars.base.activity.BaseActivity;
 /**
  * Created by Admin on 2017/9/9.
  */
-public class MeActivity extends BaseActivity {
-
-    @Override
-    public int setUpContentView() {
-        return R.layout.me_activity_layout;
-    }
+public class MyDistanceActivity extends BaseActivity {
 
     @Override
     public void setUpView() {
 
+    }
+
+    @Override
+    public int setUpContentView() {
+        return R.layout.my_distance_activity_layout;
     }
 
     @Override

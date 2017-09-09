@@ -51,8 +51,13 @@
         <activity
             android:name="com.google.zxing.activity.CaptureActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-
-        <activity android:name=".home.MeActivity"
+        <activity android:name=".me.MeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".me.MyWalletActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".me.MyDistanceActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".me.MyDiscountActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
     </application>

@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ZoomControls;
 
@@ -29,13 +28,10 @@ import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.google.zxing.activity.CaptureActivity;
-import com.greenfinch.sharecars.MainActivity;
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
 import com.greenfinch.sharecars.utils.CommonUtil;
-
-import static android.R.attr.name;
-import static android.R.attr.start;
+import com.greenfinch.sharecars.me.MeActivity;
 
 /**
  * Created by Admin on 2017/9/9.
