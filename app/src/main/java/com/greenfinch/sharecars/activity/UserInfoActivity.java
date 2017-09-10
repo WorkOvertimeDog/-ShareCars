@@ -1,6 +1,9 @@
 package com.greenfinch.sharecars.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
@@ -10,10 +13,18 @@ import com.greenfinch.sharecars.base.activity.BaseActivity;
  */
 public class UserInfoActivity extends BaseActivity {
 
+    private RelativeLayout myCredit;
 
     @Override
     public void setUpView() {
-
+        myCredit = (RelativeLayout) findViewById(R.id.my_credit);
+        myCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserInfoActivity.this, MyCreditActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -79,6 +79,15 @@
         <activity android:name=".activity.UserInfoActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.UsedGuideActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.MyCreditActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.GifsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
 
     </application>
 

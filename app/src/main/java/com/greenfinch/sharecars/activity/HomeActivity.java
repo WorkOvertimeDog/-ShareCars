@@ -43,7 +43,8 @@ public class HomeActivity extends BaseActivity {
     private RelativeLayout mapView;//MapView的载体布局
     private View infoView;//地图上点击标记物，显示更多信息的View布局
     private boolean isShow = false;//是够显示显示更多信息 默认不显示
-    private RelativeLayout scanImage, meImage;
+    private RelativeLayout scanImage, meImage, currentZhoubian;
+
 
     //默认设置为北京天安门的位置
     private double eLon1 = 116.400244;//目标位置的经纬度
@@ -64,6 +65,7 @@ public class HomeActivity extends BaseActivity {
         mapView = (RelativeLayout) findViewById(R.id.baidu_mapview);
         scanImage = (RelativeLayout) findViewById(R.id.scanning);
         meImage = (RelativeLayout) findViewById(R.id.me);
+        currentZhoubian = (RelativeLayout) findViewById(R.id.current_zhoubian);
         //扫描二维码
         scanImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,13 @@ public class HomeActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, MeActivity.class);
+                startActivity(intent);
+            }
+        });
+        currentZhoubian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, GifsActivity.class);
                 startActivity(intent);
             }
         });
