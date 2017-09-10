@@ -19,7 +19,6 @@ public class MeActivity extends BaseActivity {
     private RelativeLayout myDiscount;
     private LinearLayout userInfo;
     private RelativeLayout myGuide;
-    private RelativeLayout myModify;
 
     @Override
     public int setUpContentView() {
@@ -33,7 +32,6 @@ public class MeActivity extends BaseActivity {
         myDiscount = (RelativeLayout) findViewById(R.id.my_discount);
         userInfo = (LinearLayout) findViewById(R.id.user_info);
         myGuide = (RelativeLayout) findViewById(R.id.my_guide);
-        myModify = (RelativeLayout) findViewById(R.id.my_modify);
         myDistance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,13 +64,6 @@ public class MeActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MeActivity.this, UsedGuideActivity.class);
-                startActivity(intent);
-            }
-        });
-        myModify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MeActivity.this, MakeComplaintsActivity.class);
                 startActivity(intent);
             }
         });

@@ -70,6 +70,14 @@ public class HomeActivity extends BaseActivity {
         RelativeLayout rl = (RelativeLayout) findViewById(R.id.title_bar);
         ImageButton imbBk = (ImageButton) rl.findViewById(R.id.ibt_back);
         imbBk.setVisibility(View.GONE);
+        ImageView makeComplain = (ImageView) findViewById(R.id.make_complain);
+        makeComplain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, MakeComplaintsActivity.class);
+                startActivity(intent);
+            }
+        });
         //扫描二维码
         scanImage.setOnClickListener(new View.OnClickListener() {
             @Override
