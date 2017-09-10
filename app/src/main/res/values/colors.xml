@@ -17,4 +17,5 @@
     <color name="corner_color">#00FF00</color>
     <!-- QRCode scanner color end -->
 
+    <color name="bg_gray">#dbdbdb</color>
 </resources>

@@ -68,11 +68,11 @@ public class HomeActivity extends BaseActivity {
         scanImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(CommonUtil.isCameraCanUse()){
+                if (CommonUtil.isCameraCanUse()) {
                     Intent intent = new Intent(HomeActivity.this, CaptureActivity.class);
                     startActivityForResult(intent, REQUEST_CODE);
-                }else{
-                    Toast.makeText(HomeActivity.this,"请打开此应用的摄像头权限！",Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(HomeActivity.this, "请打开此应用的摄像头权限！", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -111,7 +111,7 @@ public class HomeActivity extends BaseActivity {
 
         //隐藏百度地图的百度logo
         View child = mMapView.getChildAt(1);
-        if (child != null && (child instanceof ImageView || child instanceof ZoomControls)){
+        if (child != null && (child instanceof ImageView || child instanceof ZoomControls)) {
             child.setVisibility(View.INVISIBLE);
         }
 
@@ -138,7 +138,7 @@ public class HomeActivity extends BaseActivity {
                 if (result != null) {
                     MyLocationData data = new MyLocationData.Builder().latitude(result.getLatitude()).longitude(result.getLongitude()).build();
                     mBaiduMap.setMyLocationData(data);
-                }else{
+                } else {
                     Toast.makeText(HomeActivity.this, "网络不好，请退出后重试！", Toast.LENGTH_LONG).show();
                 }
             }
@@ -153,13 +153,13 @@ public class HomeActivity extends BaseActivity {
     }
 
     //添加标记物
-    private void addMark(LatLng point){
+    private void addMark(LatLng point) {
         mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
 //        LatLng point = new LatLng(eLat, eLon);
         BitmapDescriptor bitmap = BitmapDescriptorFactory.fromResource(R.mipmap.station_position);
         OverlayOptions option = new MarkerOptions().position(point).icon(bitmap);
         mBaiduMap.addOverlay(option);
-        final InfoWindow currentInfoWindow = new InfoWindow(getInfoWindoView(),point, -77);
+        final InfoWindow currentInfoWindow = new InfoWindow(getInfoWindoView(), point, -77);
 //        mBaiduMap.showInfoWindow(currentInfoWindow);
         mBaiduMap.setOnMarkerClickListener(new BaiduMap.OnMarkerClickListener() {
             @Override
@@ -182,11 +182,11 @@ public class HomeActivity extends BaseActivity {
     }
 
     //获取标记物的布局
-    private View getInfoWindoView(){
+    private View getInfoWindoView() {
         if (null == infoView) {
             infoView = (ViewGroup) LayoutInflater.from(HomeActivity.this).inflate(R.layout.more_info_view, null);
         }
-        return  infoView;
+        return infoView;
     }
 
     @Override

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="实名认证"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="我们将根据实名信息，为您购买车险"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/et_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="姓名"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#707070"/>
+
+        <EditText
+            android:id="@+id/et_input_id_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="身份证号"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#707070"/>
+
+        <EditText
+            android:id="@+id/et_input_driving_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="驾驶证号"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="#707070"/>
+
+        <Button
+            android:id="@+id/btn_real_name_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#000000"
+            android:text="@string/deposit_text"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

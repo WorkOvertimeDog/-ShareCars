@@ -45,6 +45,9 @@
         </activity>
         <activity android:name=".activity.HomeActivity"/>
         <activity android:name=".activity.GuideActivity"/>
+        <activity android:name=".activity.DepositPayActivity"/>
+        <activity android:name=".activity.RealNameActivity"/>
+        <activity android:name=".activity.IdentitySuccessActivity"/>
         <activity
             android:name=".activity.UserRegisterActivity"
             android:windowSoftInputMode="adjustPan|stateHidden"

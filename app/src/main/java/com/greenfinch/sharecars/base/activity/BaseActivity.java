@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.utils.Mlog;
 
@@ -131,6 +130,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 设置布局的id
+     *
      * @return
      */
     public abstract int setUpContentView();
@@ -160,7 +160,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         Toast.makeText(mActivity, resId, Toast.LENGTH_SHORT).show();
     }
 
-    public void mLog(String log){
+    public void mLog(String log) {
         Mlog.i(mActivity.getClass().toString(), log);
     }
 
@@ -186,8 +186,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onFinish(String s){
-        if(s.equals("finish")){
+    public void onFinish(String s) {
+        if (s.equals("finish")) {
             finish();
         }
     }
