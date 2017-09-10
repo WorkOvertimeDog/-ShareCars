@@ -1,6 +1,7 @@
 package com.greenfinch.sharecars.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -77,13 +78,13 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                     Toast.makeText(UserRegisterActivity.this, "取消勾选协议，将无法完成注册", Toast.LENGTH_SHORT).show();
                 }
 
-//                if (isValidate) {
-//                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#000000"));
-//                    mBtnVerifyPhone.setEnabled(true);
-//                } else {
-//                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#e3e3e3"));
-//                    mBtnVerifyPhone.setEnabled(false);
-//                }
+                if (isValidate) {
+                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#000000"));
+                    mBtnVerifyPhone.setEnabled(true);
+                } else {
+                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#e3e3e3"));
+                    mBtnVerifyPhone.setEnabled(false);
+                }
             }
         });
 
@@ -131,7 +132,6 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 break;
         }
     }
-    
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
