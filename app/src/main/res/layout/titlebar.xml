@@ -19,13 +19,18 @@
     <ImageButton
         android:id="@+id/ibt_back"
         style="@style/style_info_back"
-        android:src="@mipmap/legal_information_btn_return"
-        android:visibility="gone"/>
+        android:src="@mipmap/legal_information_btn_return"/>
 
     <ImageButton
         android:id="@+id/ibt_add"
         style="@style/style_info_search"
         android:src="@mipmap/legal_information_btn_search_for"
         android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e5e5e5"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
