@@ -1,6 +1,7 @@
 package com.greenfinch.sharecars.activity;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -48,7 +49,16 @@ public class GuideActivity extends BaseActivity implements View.OnClickListener 
             ActivityUtils.startActivity(this, UserRegisterActivity.class, R.anim.fade_in, R.anim.fade_out);
         } else {
             //如果注册过，跳转到押金界面
-            ActivityUtils.startActivity(this, UserRegisterActivity.class, R.anim.fade_in, R.anim.fade_out);
+            ActivityUtils.startActivity(this, DepositPayActivity.class, R.anim.fade_in, R.anim.fade_out);
         }
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            ActivityUtils.finishAllActivities();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

@@ -1,8 +1,8 @@
 package com.greenfinch.sharecars.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -69,8 +69,6 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 if (b) {
                     if ("".equals(getPhone)) {
                         isValidate = false;
-                    } else if (isTure == false) {
-                        isValidate = false;
                     } else {
                         isValidate = true;
                     }
@@ -114,6 +112,13 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.btn_verify_phone:
                 //这里检测获取的验证码与输入的验证码是否一致
+                if ("".equals(getCode)) {
+                    Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
+                } else if (getCode.length() != 4) {
+                    Toast.makeText(this, "验证码输入错误", Toast.LENGTH_SHORT).show();
+                } else {
+                    ActivityUtils.startActivity(this, DepositPayActivity.class);
+                }
 //                if ("".equals(getCode)) {
 //                    Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
 //                } else if (getCode.length() != 4) {
@@ -125,5 +130,13 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 startActivity(intent);
                 break;
         }
+    }
+    
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

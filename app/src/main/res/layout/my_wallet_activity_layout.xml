@@ -5,7 +5,9 @@
     android:background="#ffffff"
     android:layout_height="match_parent">
 
-    <include layout="@layout/titlebar"/>
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/titlebar"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -74,6 +76,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/balance"
         android:layout_width="match_parent"
         android:paddingLeft="15dp"
         android:layout_height="40dp">
