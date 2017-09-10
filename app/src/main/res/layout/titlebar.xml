@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@color/white"
-                android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tex_title"
@@ -19,12 +19,28 @@
     <ImageButton
         android:id="@+id/ibt_back"
         style="@style/style_info_back"
-        android:src="@mipmap/legal_information_btn_return"
-        android:visibility="gone"/>
+        android:src="@mipmap/legal_information_btn_return"/>
 
     <ImageButton
         android:id="@+id/ibt_add"
         style="@style/style_info_search"
         android:src="@mipmap/legal_information_btn_search_for"
         android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:visibility="gone"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e5e5e5"
+        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>

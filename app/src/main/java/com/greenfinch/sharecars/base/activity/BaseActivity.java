@@ -5,9 +5,11 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +21,8 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import butterknife.ButterKnife;
+
+import static android.R.attr.mode;
 
 /**
  * Created by Xiexr
@@ -60,7 +64,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(layoutResID, titleID, -1, MODE_BACK);
     }
 
-    public void setContentView(int layoutResID, int titleID, int mode, int btnID) {
+    public void setContentView(int layoutResID, int titleID, int btnID, int mode) {
         setContentView(layoutResID, titleID, -1, mode, btnID);
     }
 
@@ -109,13 +113,16 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected abstract void doAdd();
 
     private void setUpBack() {
-        iBtnBack = (ImageButton) findViewById(R.id.ibt_back);
-        iBtnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackClicked();
-            }
-        });
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.title_bar);
+        if (rl != null) {
+            iBtnBack = (ImageButton) rl.findViewById(R.id.ibt_back);
+            iBtnBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onBackClicked();
+                }
+            });
+        }
     }
 
     private void onBackClicked() {

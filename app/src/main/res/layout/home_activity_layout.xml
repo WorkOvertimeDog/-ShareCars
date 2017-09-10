@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/titlebar"/>
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/titlebar"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +20,18 @@
 
         </RelativeLayout>
 
+        <ImageView
+            android:id="@+id/make_complain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/nav_bar"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/pin"/>
+
         <LinearLayout
+            android:id="@+id/nav_bar"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"

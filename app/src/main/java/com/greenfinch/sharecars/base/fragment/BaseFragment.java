@@ -29,8 +29,8 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mRootView = inflater.inflate(getContentViewId(), container, false);
         this.mActivity = getActivity();
-        EventBus.getDefault().register(BaseFragment.this);
-        ButterKnife.bind(mRootView);
+//        EventBus.getDefault().register(BaseFragment.this);
+//        ButterKnife.bind(mRootView);
         initAllMembersView(savedInstanceState);
         return mRootView;
     }
@@ -42,7 +42,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(mRootView);//解绑
+//        ButterKnife.unbind(mRootView);//解绑
     }
 
     public void toastShow(int resId) {
@@ -61,7 +61,7 @@ public abstract class BaseFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
 //        onUnsubscribe();
-        EventBus.getDefault().unregister(BaseFragment.this);
+//        EventBus.getDefault().unregister(BaseFragment.this);
     }
 
 //    public void onUnsubscribe() {

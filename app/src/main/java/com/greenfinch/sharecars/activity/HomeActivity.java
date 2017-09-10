@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -66,6 +67,17 @@ public class HomeActivity extends BaseActivity {
         scanImage = (RelativeLayout) findViewById(R.id.scanning);
         meImage = (RelativeLayout) findViewById(R.id.me);
         currentZhoubian = (RelativeLayout) findViewById(R.id.current_zhoubian);
+        RelativeLayout rl = (RelativeLayout) findViewById(R.id.title_bar);
+        ImageButton imbBk = (ImageButton) rl.findViewById(R.id.ibt_back);
+        imbBk.setVisibility(View.GONE);
+        ImageView makeComplain = (ImageView) findViewById(R.id.make_complain);
+        makeComplain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, MakeComplaintsActivity.class);
+                startActivity(intent);
+            }
+        });
         //扫描二维码
         scanImage.setOnClickListener(new View.OnClickListener() {
             @Override
