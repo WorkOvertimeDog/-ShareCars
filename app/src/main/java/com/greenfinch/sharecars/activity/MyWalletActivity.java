@@ -1,6 +1,9 @@
 package com.greenfinch.sharecars.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
@@ -8,12 +11,20 @@ import com.greenfinch.sharecars.base.activity.BaseActivity;
 /**
  * Created by Admin on 2017/9/9.
  */
-
 public class MyWalletActivity extends BaseActivity {
+
+    private RelativeLayout chargeButton;
 
     @Override
     public void setUpView() {
-
+        chargeButton = (RelativeLayout) findViewById(R.id.charge_button);
+        chargeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyWalletActivity.this, ChargeMoneyActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

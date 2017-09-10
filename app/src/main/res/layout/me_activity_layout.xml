@@ -14,34 +14,42 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true">
 
-        <com.greenfinch.sharecars.common.view.CircleImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_launcher"/>
-
         <LinearLayout
-            android:id="@+id/green_logistics"
+            android:id="@+id/user_info"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/green_logistics_vip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:text="物雀物流VIP"/>
+            <com.greenfinch.sharecars.common.view.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"
+                android:src="@mipmap/ic_launcher"/>
 
-            <TextView
-                android:id="@+id/green_logistics_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:text="已认证：信用分100"/>
+            <LinearLayout
+                android:id="@+id/green_logistics"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/green_logistics_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="物雀物流VIP"/>
+
+                <TextView
+                    android:id="@+id/green_logistics_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="已认证：信用分100"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

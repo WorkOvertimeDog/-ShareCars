@@ -70,6 +70,15 @@
         <activity android:name=".activity.MyDiscountActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MakeComplaintsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.ChargeMoneyActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.UserInfoActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
 
     </application>
 
