@@ -74,6 +74,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/balance"
         android:layout_width="match_parent"
         android:paddingLeft="15dp"
         android:layout_height="40dp">
