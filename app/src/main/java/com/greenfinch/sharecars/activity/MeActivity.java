@@ -3,11 +3,11 @@ package com.greenfinch.sharecars.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
+import com.greenfinch.sharecars.common.view.CircleImageView;
 
 /**
  * Created by Admin on 2017/9/9.
@@ -17,7 +17,7 @@ public class MeActivity extends BaseActivity {
     private RelativeLayout myDistance;
     private RelativeLayout myWallet;
     private RelativeLayout myDiscount;
-    private LinearLayout userInfo;
+    private CircleImageView userInfo;
     private RelativeLayout myGuide;
 
     @Override
@@ -30,7 +30,7 @@ public class MeActivity extends BaseActivity {
         myDistance = (RelativeLayout) findViewById(R.id.my_distance);
         myWallet = (RelativeLayout) findViewById(R.id.my_wallet);
         myDiscount = (RelativeLayout) findViewById(R.id.my_discount);
-        userInfo = (LinearLayout) findViewById(R.id.user_info);
+        userInfo = (CircleImageView) findViewById(R.id.user_info);
         myGuide = (RelativeLayout) findViewById(R.id.my_guide);
         myDistance.setOnClickListener(new View.OnClickListener() {
             @Override

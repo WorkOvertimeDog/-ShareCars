@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ZoomControls;
@@ -44,8 +45,8 @@ public class HomeActivity extends BaseActivity {
     private RelativeLayout mapView;//MapView的载体布局
     private View infoView;//地图上点击标记物，显示更多信息的View布局
     private boolean isShow = false;//是够显示显示更多信息 默认不显示
-    private RelativeLayout scanImage, meImage, currentZhoubian;
-
+    private RelativeLayout meImage, currentZhoubian;
+    private LinearLayout scanImage;
 
     //默认设置为北京天安门的位置
     private double eLon1 = 116.400244;//目标位置的经纬度
@@ -64,7 +65,7 @@ public class HomeActivity extends BaseActivity {
     @Override
     public void setUpView() {
         mapView = (RelativeLayout) findViewById(R.id.baidu_mapview);
-        scanImage = (RelativeLayout) findViewById(R.id.scanning);
+        scanImage = (LinearLayout) findViewById(R.id.scanning);
         meImage = (RelativeLayout) findViewById(R.id.me);
         currentZhoubian = (RelativeLayout) findViewById(R.id.current_zhoubian);
         RelativeLayout rl = (RelativeLayout) findViewById(R.id.title_bar);
