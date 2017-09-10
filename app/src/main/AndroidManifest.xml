@@ -43,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".activity.HomeActivity"/>
         <activity android:name=".activity.GuideActivity"/>
         <activity android:name=".activity.DepositPayActivity"/>
@@ -52,22 +53,53 @@
             android:name=".activity.UserRegisterActivity"
             android:windowSoftInputMode="adjustPan|stateHidden"
             />
+=======
+>>>>>>> develop
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="FsxjXI5Sr0fgZ3tiXvXrFQPIG6OPoOsz"/>
-        android:windowSoftInputMode="adjustPan|stateHidden"/>
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="FsxjXI5Sr0fgZ3tiXvXrFQPIG6OPoOsz"/>
 
-        <activity
-            android:name="com.google.zxing.activity.CaptureActivity"
+        <activity android:name=".activity.HomeActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-
-        <activity
-            android:name=".activity.MeActivity"
+        <activity android:name=".activity.GuideActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activity.UserRegisterActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.google.zxing.activity.CaptureActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MyWalletActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MyDistanceActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MyDiscountActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.MakeComplaintsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.ChargeMoneyActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.UserInfoActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.UsedGuideActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.MyCreditActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.GifsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
 
     </application>
 

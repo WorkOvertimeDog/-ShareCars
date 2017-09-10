@@ -1,5 +1,6 @@
 package com.greenfinch.sharecars.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -77,13 +78,13 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                     Toast.makeText(UserRegisterActivity.this, "取消勾选协议，将无法完成注册", Toast.LENGTH_SHORT).show();
                 }
 
-                if (isValidate) {
-                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#000000"));
-                    mBtnVerifyPhone.setEnabled(true);
-                } else {
-                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#e3e3e3"));
-                    mBtnVerifyPhone.setEnabled(false);
-                }
+//                if (isValidate) {
+//                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#000000"));
+//                    mBtnVerifyPhone.setEnabled(true);
+//                } else {
+//                    mBtnVerifyPhone.setBackgroundColor(Color.parseColor("#e3e3e3"));
+//                    mBtnVerifyPhone.setEnabled(false);
+//                }
             }
         });
 
@@ -112,6 +113,7 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.btn_verify_phone:
                 //这里检测获取的验证码与输入的验证码是否一致
+<<<<<<< HEAD
                 if ("".equals(getCode)) {
                     Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
                 } else if (getCode.length() != 4) {
@@ -119,6 +121,17 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 } else {
                     ActivityUtils.startActivity(this, DepositPayActivity.class);
                 }
+=======
+//                if ("".equals(getCode)) {
+//                    Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
+//                } else if (getCode.length() != 4) {
+//                    Toast.makeText(this, "验证码输入错误", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    ActivityUtils.startActivity(this, HomeActivity.class);
+//                }
+                Intent intent = new Intent(UserRegisterActivity.this, HomeActivity.class);
+                startActivity(intent);
+>>>>>>> develop
                 break;
         }
     }

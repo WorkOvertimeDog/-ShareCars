@@ -1,6 +1,10 @@
 package com.greenfinch.sharecars.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.greenfinch.sharecars.R;
 import com.greenfinch.sharecars.base.activity.BaseActivity;
@@ -10,6 +14,13 @@ import com.greenfinch.sharecars.base.activity.BaseActivity;
  */
 public class MeActivity extends BaseActivity {
 
+    private RelativeLayout myDistance;
+    private RelativeLayout myWallet;
+    private RelativeLayout myDiscount;
+    private LinearLayout userInfo;
+    private RelativeLayout myGuide;
+    private RelativeLayout myModify;
+
     @Override
     public int setUpContentView() {
         return R.layout.me_activity_layout;
@@ -17,7 +28,54 @@ public class MeActivity extends BaseActivity {
 
     @Override
     public void setUpView() {
-
+        myDistance = (RelativeLayout) findViewById(R.id.my_distance);
+        myWallet = (RelativeLayout) findViewById(R.id.my_wallet);
+        myDiscount = (RelativeLayout) findViewById(R.id.my_discount);
+        userInfo = (LinearLayout) findViewById(R.id.user_info);
+        myGuide = (RelativeLayout) findViewById(R.id.my_guide);
+        myModify = (RelativeLayout) findViewById(R.id.my_modify);
+        myDistance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, MyDistanceActivity.class);
+                startActivity(intent);
+            }
+        });
+        myWallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, MyWalletActivity.class);
+                startActivity(intent);
+            }
+        });
+        myDiscount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, MyDiscountActivity.class);
+                startActivity(intent);
+            }
+        });
+        userInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, UserInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+        myGuide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, UsedGuideActivity.class);
+                startActivity(intent);
+            }
+        });
+        myModify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MeActivity.this, MakeComplaintsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
