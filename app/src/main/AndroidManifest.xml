@@ -105,8 +105,12 @@
             android:name=".activity.GifsActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
+<<<<<<< HEAD
         <activity
             android:name=".activity.BalanceActivity"
+=======
+        <activity android:name=".activity.BalanceActivity"
+>>>>>>> develop
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden"/>
 
