@@ -1,7 +1,6 @@
 package com.greenfinch.sharecars.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -113,7 +112,6 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 break;
             case R.id.btn_verify_phone:
                 //这里检测获取的验证码与输入的验证码是否一致
-<<<<<<< HEAD
                 if ("".equals(getCode)) {
                     Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
                 } else if (getCode.length() != 4) {
@@ -121,7 +119,6 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
                 } else {
                     ActivityUtils.startActivity(this, DepositPayActivity.class);
                 }
-=======
 //                if ("".equals(getCode)) {
 //                    Toast.makeText(this, "验证码输入不能为空", Toast.LENGTH_SHORT).show();
 //                } else if (getCode.length() != 4) {
@@ -131,11 +128,10 @@ public class UserRegisterActivity extends BaseActivity implements View.OnClickLi
 //                }
                 Intent intent = new Intent(UserRegisterActivity.this, HomeActivity.class);
                 startActivity(intent);
->>>>>>> develop
                 break;
         }
     }
-
+    
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
